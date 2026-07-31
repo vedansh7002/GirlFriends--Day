@@ -1,60 +1,48 @@
 function openLetter(){
 
-document.getElementById("letter")
-.style.display="flex";
+    document.getElementById("letter")
+    .style.display="flex";
 
 }
 
 
 function closeLetter(){
 
-document.getElementById("letter")
-.style.display="none";
+    document.getElementById("letter")
+    .style.display="none";
 
 }
 
 
-
-function playMusic(){
-
-let song=document.getElementById("song");
-
-song.play();
-
-}
-
-
-// floating hearts
+// Floating hearts animation
 
 setInterval(()=>{
 
-let heart=document.createElement("div");
+    let heart=document.createElement("div");
 
-heart.innerHTML="❤️";
+    heart.innerHTML="❤️";
 
-heart.style.position="fixed";
+    heart.style.position="fixed";
 
-heart.style.left=Math.random()*100+"%";
+    heart.style.left=Math.random()*100+"%";
 
-heart.style.bottom="-20px";
+    heart.style.bottom="-20px";
 
-heart.style.fontSize=
-Math.random()*30+20+"px";
+    heart.style.fontSize=
+    Math.random()*30+20+"px";
 
-heart.style.animation=
-"rise 5s linear";
-
-
-document.body.appendChild(heart);
+    heart.style.animation=
+    "rise 5s linear";
 
 
-setTimeout(()=>{
+    document.body.appendChild(heart);
 
-heart.remove();
 
-},5000);
+    setTimeout(()=>{
+
+        heart.remove();
+
+    },5000);
 
 
 },300);
-
-
